@@ -1,8 +1,10 @@
 # <b> Auto Clicker Typer </b>
 
-<p align="center">
-  https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
-</p>
+https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
+
+
+https://user-images.githubusercontent.com/33188761/209882823-5fa48767-1818-49ed-a317-54095145e887.mp4
+
 
 ## <b> Clicking and typing automation </b>
 
