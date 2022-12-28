@@ -4,6 +4,8 @@
 
 https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
 
+text 
+
 ## <b> Clicking and typing automation </b>
 
 This is a simple auto repeat robot. This can be used if you need to click or type the same sequence a lot, and can repeat most sequences of mouse and keyboard actions on your full desktop screen.
