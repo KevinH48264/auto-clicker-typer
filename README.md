@@ -1,10 +1,9 @@
 # <b> Auto Clicker Typer </b>
 
+text
 <!-- <b>Auto Clicker Typer repeating clicks and types with shortcut</b> -->
 
 https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
-
-text 
 
 ## <b> Clicking and typing automation </b>
 
