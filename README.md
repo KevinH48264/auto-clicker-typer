@@ -1,4 +1,4 @@
-# <b> Auto Clicker and Typer </b>
+# <b> Auto Clicker Typer </b>
 
 <!-- Insert gif or video to catch their attention -->
 
@@ -28,6 +28,9 @@ Note: on computers like Mac, you may need to go to System Preferences -> Securit
 <b>No data collection.</b> No information, screen display, or data is collected nor saved. Once you exit the application, all data is deleted. 
 
 <b>Zero remote access.</b> In terms of security, this application does not allow other people or devices to control your computer or view your computer's data at any time or in any capacity. 
+
+## <b> Liability </b>
+Auto Clicker Typer is not responsible or liable for any misuse of this tool. 
 
 ## <b> Contact us </b>
 Questions, comments, concerns? Email 1kevin.huang[at]gmail.com
