@@ -28,12 +28,9 @@ class ComputerTracker:
             self.actions += [('press', key)]
 
         if key == Key.esc:
-            self.exit = True
-            print("ON PRESS ESC WAS PRESSED")
-            # click back in
             mouse_obj = mouse.Controller()
             keyboard = Controller()
-            mouse_obj.press(mouse.Button.left)
+            mouse_obj.release(mouse.Button.left)
             keyboard.press(Key.esc)
 
             self.start_robot_bool = False
@@ -42,18 +39,18 @@ class ComputerTracker:
             return False
 
         # Activate the robot
-        if len(self.all_actions) >= 3 and self.all_actions[-3][0] == 'press' and self.all_actions[-3][1] == Key.ctrl and self.all_actions[-2][0] == 'press' and self.all_actions[-2][1] == Key.shift:
+        if len(self.all_actions) >= 2 and self.all_actions[-2][0] == 'press' and self.all_actions[-2][1] == Key.ctrl:
             try:
-                if key.char == 's': # Start
-                    print("START ROBOT MODE ACTIVATED")
+                if key.char == '/': # Start
+                    print("\n⏯ Starting robot to repeat recording. \n    To stop the application, press 'Esc' after the recording is over.")
                     self.start_robot()
                     self.listening = False
-                elif key.char == 'l': # Listen
-                    print("LISTENING MODE ACTIVATED")
+                elif key.char == ',': # Listen
+                    print("\n⏺ Starting to record your mouse and keyboard actions. \n    To stop and save your recording, press 'Ctrl' + '.'\n    To restart your recording, press 'Ctrl' + ','")
                     self.listening = True
                     self.actions = []
-                elif key.char == 'd': # Done listening
-                    print("LOADED MODE ACTIVATED. PRESS CTRL+SHIFT+S TO START ROBOT")
+                elif key.char == '.': # Done listening
+                    print("\n⏹ Stopping and saving recording. \n    To have the robot repeat your saved recording, press 'Ctrl' + '/'. Caution: you can only exit the application after the robot is complete, use with care!\n    To re-record, press 'Ctrl' + ','")
                     self.listening = False
             except AttributeError:
                 pass
@@ -80,7 +77,9 @@ class ComputerTracker:
         keyboard = Controller()
 
         actions = self.actions[3:-3] # trim the beginning and end commands
-        print("STARTING ROBOT EXECUTION")
+
+        time.sleep(1)
+        print("\n🛫 Robot is starting your recording.")
         for a in actions:
             instruction = a[0]
             value = a[1]
@@ -105,10 +104,30 @@ class ComputerTracker:
 
             time.sleep(0.01)
 
-        print("COMPLETED ROBOT EXECUTION")
+        print("\n🛬 Robot has completed your recording.")
+        time.sleep(1)
+        print("\n⏺ To start recording again, press 'Ctrl' + ','\n⏯ To have the robot repeat your recording again, press 'Ctrl' + '/'\n🚪To exit, press 'Esc'")
 
+# main code here
+overview = "This is a simple auto repeat robot. \n\
+This can be used if you need to click or type a lot."
 
-print("...starting...")
+instructions = "\nControl with shortcuts easily:\n\
+    ⏺ Start recording: 'Ctrl' + ',' (Comma) \n\
+    ⏹ Stop and save recording: 'Ctrl' + '.' (Period) \n\
+    ⏯ Start robot to repeat recording: 'Ctrl' + '/' (Forward slash) \n\
+    🚪Exit application: 'Esc'" 
+
 CT = ComputerTracker()
+time.sleep(1)
+print("✅ Application has started successfully. ✅\n")
+time.sleep(1)
+print("📝 Here are the instructions:")
+time.sleep(1)
+print(overview)
+time.sleep(1)
+print(instructions)
 CT.handle_keyboard_events()
-print("...ending...")
+
+time.sleep(1)
+print("\n✅ Application has ended successfully. ✅")
