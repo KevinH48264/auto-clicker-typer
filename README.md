@@ -1,21 +1,33 @@
-## Overview
-Click and typing automation. 
+# Auto Clicker and Typer
 
-This is a simple auto repeat robot. This can be used if you need to click or type a lot. Control with shortcuts easily.
+<!-- Insert gif or video to catch their attention -->
 
-Start recording: 'Ctrl' + ',' (Comma)
-Stop and save recording: 'Ctrl' + '.' (Period)
-Start robot to repeat recording: 'Ctrl' + '/' (Forward slash)
-Exit application: 'Esc'
+## <b> Clicking and typing automation </b>
 
-## How to use:
-0. Ensure that you have python and pip installed
-1. Download this repository.
-2. Open up terminal or command prompt
+This is a simple auto repeat robot. This can be used if you need to click or type the same sequence a lot, and can repeat most sequences of mouse and keyboard actions.
+
+<b> Control with shortcuts easily: </b>
+- ⏺ Start recording: 'Ctrl' + ',' (Comma)
+- ⏹ Stop and save recording: 'Ctrl' + '.' (Period)
+- ⏯ Start robot to repeat recording: 'Ctrl' + '/' (Forward slash)
+- 🚪 Exit application: 'Esc'
+
+## <b> How to quick install </b>
+<!-- Insert video or gif here on how to do these steps? -->
+0. Ensure that you have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed
+1. Download this repository (download and unzip or git clone)
+2. Open up terminal or command prompt 
 3. Navigate to the 'auto-clicker-typer' folder
 4. Run 'pip install requirements.txt' OR 'pip install pynput'
 5. Run 'python3 robot.py'
+6. Start using the shortcuts!
 
-## TODO
-1. Add instructions after robot completed repeating recording
-2. Fix tabbing on instructions
+Note: on computers like Mac, you may need to go to System Preferences -> Security & Privacy -> Accessibility and check 'Terminal' to enable computer control.
+
+## Privacy Policy
+<b>No data collection.</b> No information, screen display, or data is collected nor saved. Once you exit the application, all data is deleted. 
+
+<b>Zero remote access.</b> In terms of security, this application does not allow other people or devices to control your computer or view your computer's data at any time or in any capacity. 
+
+## Contact us
+Questions, comments, concerns? Email 1kevin.huang@gmail.com

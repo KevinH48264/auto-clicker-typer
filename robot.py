@@ -110,7 +110,7 @@ class ComputerTracker:
 
 # main code here
 overview = "This is a simple auto repeat robot. \n\
-This can be used if you need to click or type a lot."
+This can be used if you need to click or type a lot, and can repeat most keyboard and mouse actions you make."
 
 instructions = "\nControl with shortcuts easily:\n\
     ⏺ Start recording: 'Ctrl' + ',' (Comma) \n\
