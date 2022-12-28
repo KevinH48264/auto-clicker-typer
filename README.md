@@ -1,6 +1,6 @@
 # <b> Auto Clicker Typer </b>
 
-<!-- Insert gif or video to catch their attention -->
+[![Auto Clicker Typer Robot Demo](https://youtu.be/1L-HJ5f5H9A "Auto Clicker Typer Robot Demo")
 
 ## <b> Clicking and typing automation </b>
 
