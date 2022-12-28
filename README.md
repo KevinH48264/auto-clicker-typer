@@ -1,4 +1,4 @@
-# Auto Clicker and Typer
+# <b> Auto Clicker and Typer </b>
 
 <!-- Insert gif or video to catch their attention -->
 
@@ -24,10 +24,10 @@ This is a simple auto repeat robot. This can be used if you need to click or typ
 
 Note: on computers like Mac, you may need to go to System Preferences -> Security & Privacy -> Accessibility and check 'Terminal' to enable computer control.
 
-## Privacy Policy
+## <b> Privacy Policy </b>
 <b>No data collection.</b> No information, screen display, or data is collected nor saved. Once you exit the application, all data is deleted. 
 
 <b>Zero remote access.</b> In terms of security, this application does not allow other people or devices to control your computer or view your computer's data at any time or in any capacity. 
 
-## Contact us
+## <b> Contact us </b>
 Questions, comments, concerns? Email 1kevin.huang[at]gmail.com
