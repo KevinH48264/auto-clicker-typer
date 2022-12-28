@@ -1,6 +1,6 @@
 # <b> Auto Clicker Typer </b>
 
-[![Auto Clicker Typer Robot Demo](http://img.youtube.com/vi/1L-HJ5f5H9A&ab_channel=KevinHuang/0.jpg)](http://www.youtube.com/watch?v=1L-HJ5f5H9A&ab_channel=KevinHuang "Auto Clicker Typer Robot Demo")
+[![Auto Clicker Typer Robot Demo](http://img.youtube.com/vi/1L-HJ5f5H9A/0.jpg)](http://www.youtube.com/watch?v=1L-HJ5f5H9A "Auto Clicker Typer Robot Demo")
 
 ## <b> Clicking and typing automation </b>
 
