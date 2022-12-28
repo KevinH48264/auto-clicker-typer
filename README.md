@@ -1,12 +1,8 @@
 # <b> Auto Clicker Typer </b>
 
-
-https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
-
-
-
-
-[![Auto Clicker Typer Robot Demo](http://img.youtube.com/vi/1L-HJ5f5H9A/0.jpg)](http://www.youtube.com/watch?v=1L-HJ5f5H9A "Auto Clicker Typer Robot Demo")
+<p align="center">
+  https://user-images.githubusercontent.com/33188761/209882721-5ff32c9c-4e22-45be-876c-0487e4fe177c.mp4
+</p>
 
 ## <b> Clicking and typing automation </b>
 
