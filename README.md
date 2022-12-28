@@ -30,7 +30,7 @@ Note: on computers like Mac, you may need to go to System Preferences -> Securit
 <b>Zero remote access.</b> In terms of security, this application does not allow other people or devices to control your computer or view your computer's data at any time or in any capacity. 
 
 ## <b> Liability </b>
-Auto Clicker Typer is not responsible or liable for any misuse of this tool. 
+Auto Clicker Typer is not liable for any misuse of this product. By using Auto Clicker Typer, you are agreeing to using this product responsibly.
 
 ## <b> Contact us </b>
 Questions, comments, concerns? Email 1kevin.huang[at]gmail.com
