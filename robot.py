@@ -2,7 +2,7 @@ from pynput import mouse
 from pynput.keyboard import Key, Listener, GlobalHotKeys, Controller
 import time
 
-# CODE FOR LISTENING TO KEYBOARD AND MOUSE STROKES
+# CODE FOR LISTENING TO AND CONTROLLING KEYBOARD AND MOUSE STROKES
 class ComputerTracker:
     def __init__(self):
         self.actions = []
@@ -43,8 +43,8 @@ class ComputerTracker:
             try:
                 if key.char == '/': # Start
                     print("\n⏯ Starting robot to repeat recording. \n    To stop the application, press 'Esc' after the recording is over.")
-                    self.start_robot()
                     self.listening = False
+                    self.start_robot()
                 elif key.char == ',': # Listen
                     print("\n⏺ Starting to record your mouse and keyboard actions. \n    To stop and save your recording, press 'Ctrl' + '.'\n    To restart your recording, press 'Ctrl' + ','")
                     self.listening = True
