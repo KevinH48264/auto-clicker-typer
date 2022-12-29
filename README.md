@@ -15,7 +15,7 @@ This is a simple auto repeat robot. This can be used if you need to click or typ
 - 🚪 Exit application: 'Esc'
 
 ## <b> How to quick install </b>
-<!-- Insert video or gif here on how to do these steps? -->
+[Youtube setup tutorial & walkthrough video here](https://youtu.be/LvmsKqfO8r4)
 1. Ensure that you have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed
 2. Download this repository (download and unzip or git clone)
 3. Open up terminal or command prompt 
