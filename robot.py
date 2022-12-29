@@ -81,7 +81,7 @@ class ComputerTracker:
         actions = self.actions[3:-3] # trim the beginning and end commands
 
         time.sleep(1)
-        print("\n🛫 Robot is starting your recording " + str(self.repeat_times) + " time(s)")
+        print("\n🛫 Robot is starting your recording " + str(self.repeat_times) + " time(s) \nTo emergency exit, click on the terminal window and press 'Ctrl' + 'C' together.")
         for _ in range(self.repeat_times):
             for a in actions:
                 instruction = a[0]
