@@ -1,14 +1,16 @@
 from pynput import mouse
 from pynput.keyboard import Key, Listener, GlobalHotKeys, Controller
 import time
+import sys
 
 # CODE FOR LISTENING TO AND CONTROLLING KEYBOARD AND MOUSE STROKES
 class ComputerTracker:
-    def __init__(self):
+    def __init__(self, repeat_times):
         self.actions = []
         self.all_actions = []
         self.listening = False
         self.exit = False
+        self.repeat_times = repeat_times
 
     def on_move(self, x, y):
         if self.listening:
@@ -79,30 +81,31 @@ class ComputerTracker:
         actions = self.actions[3:-3] # trim the beginning and end commands
 
         time.sleep(1)
-        print("\n🛫 Robot is starting your recording.")
-        for a in actions:
-            instruction = a[0]
-            value = a[1]
+        print("\n🛫 Robot is starting your recording " + str(self.repeat_times) + " time(s)")
+        for _ in range(self.repeat_times):
+            for a in actions:
+                instruction = a[0]
+                value = a[1]
 
-            if instruction == "move":
-                mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
-            elif instruction == "click" and value[2]:
-                mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
-                mouse_obj.press(mouse.Button.left)
-            elif instruction == "scroll":
-                mouse_obj.scroll(value[2], value[3])
-            elif instruction == "click" and not value[2]:
-                mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
-                mouse_obj.release(mouse.Button.left)
-            elif instruction == "press":
-                if value == Key.enter:
-                    time.sleep(0.05)
+                if instruction == "move":
+                    mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
+                elif instruction == "click" and value[2]:
+                    mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
+                    mouse_obj.press(mouse.Button.left)
+                elif instruction == "scroll":
+                    mouse_obj.scroll(value[2], value[3])
+                elif instruction == "click" and not value[2]:
+                    mouse_obj.move(value[0] - mouse_obj.position[0], value[1] - mouse_obj.position[1])
+                    mouse_obj.release(mouse.Button.left)
+                elif instruction == "press":
+                    if value == Key.enter:
+                        time.sleep(0.05)
 
-                keyboard.press(value)
-            elif instruction == "release":
-                keyboard.release(value)
+                    keyboard.press(value)
+                elif instruction == "release":
+                    keyboard.release(value)
 
-            time.sleep(0.01)
+                time.sleep(0.01)
 
         print("\n🛬 Robot has completed your recording.")
         time.sleep(1)
@@ -118,7 +121,12 @@ instructions = "\nControl with shortcuts easily:\n\
     ⏯ Start robot to repeat recording: 'Ctrl' + '/' (Forward slash) \n\
     🚪Exit application: 'Esc'" 
 
-CT = ComputerTracker()
+# number of times for robot to repeat
+repeat_times = 1
+if len(sys.argv) > 1:
+    repeat_times = int(sys.argv[1])
+
+CT = ComputerTracker(repeat_times)
 time.sleep(1)
 print("✅ Application has started successfully. ✅\n")
 time.sleep(1)
