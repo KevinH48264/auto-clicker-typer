@@ -1,6 +1,6 @@
 # <b> Auto Clicker Typer </b>
 
-<b> Demo: </b> Auto Clicker Typer repeating recording of clicks and types after 1 shortcut
+<b> Demo: </b> Auto Clicker Typer repeating self-made sequence of clicks and types after 1 shortcut press
 
 https://user-images.githubusercontent.com/33188761/209883268-ad0dbd29-e00a-43ac-bbc3-bcdf738a5069.mp4
 
