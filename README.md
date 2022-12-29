@@ -20,7 +20,7 @@ This is a simple auto repeat robot. This can be used if you need to click or typ
 2. Download this repository (download and unzip or git clone)
 3. Open up terminal or command prompt 
 4. Navigate to the 'auto-clicker-typer' folder
-5. Run 'pip install requirements.txt' OR 'pip install pynput'
+5. Run 'pip install -r requirements.txt' OR 'pip install pynput'
 6. Run 'python3 robot.py'
 7. Start using the shortcuts
 
