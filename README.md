@@ -26,6 +26,12 @@ This is a simple auto repeat robot. This can be used if you need to click or typ
 
 Note: on computers like Mac, you may need to go to System Preferences -> Security & Privacy -> Accessibility and check 'Terminal' to enable computer control.
 
+## <b> How to change shortcuts <b> ##
+If you'd like to change the shortcuts:
+1. Edit the robot.py file and find the comment that says "# Activate the robot"
+2. Change the key.char == '<your-new-key>' for changing Start, Listen, or Done Listening
+3. Save the file and your new shortcut will be 'Ctrl' + '<your-new-key>'
+
 ## <b> Privacy Policy </b>
 <b>No data collection.</b> No information, screen display, or data is collected, changed, or saved. Once you exit the application, all data is deleted. 
 
